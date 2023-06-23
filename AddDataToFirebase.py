@@ -28,7 +28,7 @@ database = firebase.database()
 def browse_image():
     file_path = filedialog.askopenfilename(filetypes=[("Image files", "*.png *.jpg *.jpeg")])
     if file_path:
-        image_path_label.config(text=file_path)
+        image_path_label.configure(text=file_path)
 
 def submit():
     name = name_entry.get()
